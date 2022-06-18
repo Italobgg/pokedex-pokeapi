@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { searchPokemon } from "./api";
 
 const Searchbar = () => {
-  const [search, setSearch] = useState("ditto");
+  const [search, setSearch] = useState("rayquaza");
   const [pokemon, setPokemon] = useState();
   const onChangeHandler = (e) => {
     setSearch(e.target.value);
