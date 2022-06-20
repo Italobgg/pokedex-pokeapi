@@ -1,12 +1,14 @@
 import { type } from "@testing-library/user-event/dist/type";
-import React from "react";
+import React, {useContext} from "react";
+import FavoriteContext from "../contexts/favoritesContext";
 
 const Pokemon = (props) => {
+  const {favoritePokemons, updateFavoritePokemons} = useContext(FavoriteContext)
   const { pokemon } = props;
  const onHeartClik = () => {
-  console.log("Favoritar")
+    updateFavoritePokemons (pokemon.name)
  }
- const heart = "❤️"
+ const heart = favoritePokemons.includes(pokemon.name) ? "❤️" : "❤"
   return (
     <div className="pokemon-card">
       <div className="pokemon-image-container">

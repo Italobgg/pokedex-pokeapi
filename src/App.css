@@ -1,9 +1,9 @@
  /* PALETA DE CORES PRINCIPAIS
-#fe4294 btn
+#fe4294 btn #FFCA05
 #E43681
 #C1306F 
 #000000 texto
-#5269DD fundo
+#5269DD fundo  #306BB3
 #517B9D 
  */
 
@@ -12,7 +12,7 @@
 }
 
 body {
-  background: #5269DD;
+  background: #306BB3;
   margin: 2.5%;
   color: #000000;
 }
@@ -49,11 +49,11 @@ nav {
 }
 
 .searchbar-btn button {
-  background-color: #6C193D;
+  background-color: #FFCA05;
   border: none;
   border-radius: 10px;
   height: 44px;
-  color: #fff;
+  color: #000;
   padding: 10px 12px;
 }
 
@@ -79,7 +79,7 @@ nav {
   display: flex;
   box-shadow: 4px 4px 4px (0, 0, 0, 0.25);
   border-radius: 20px;
-  background-color: #E43681;
+  background-color: rgb(234, 43, 43);
 }
 
 .pokemon-image {
@@ -113,8 +113,6 @@ nav {
   text-transform: capitalize;
 }
 
-
-
 .card-bottom {
   display: flex;
   flex-direction: row;
@@ -135,6 +133,14 @@ nav {
   display: flex;
   text-transform: capitalize;
   align-items: center;
+}
+
+.pagination-container button {
+  background-color: #dfba33;
+  border: none;
+  border-radius: 10px;
+  height: 35px;
+  color: #000;
 }
 
 
