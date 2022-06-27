@@ -15,7 +15,7 @@ function App() {
   const [pokemons, setPokemons] = useState([]);
   const [favorites, setFavorites] = useState([]);
 
-  const itensPerPage = 24;
+  const itensPerPage = 25;
   const fetchPokemons = async () => {
     try {
       setLoading(true);
@@ -73,16 +73,20 @@ function App() {
       <div>
         <Navbar />
         <Searchbar onSearch={onSearchHandler} />
-        <Pokedex
+        {notFound ? (
+          <div className="not-found-text">Pokemon não registrado na dex ;-;</div>
+        ) :
+        (<Pokedex
           pokemons={pokemons}
           loading={loading}
           page={page}
           setPage={setPage}
           totalPages={totalPages}
-        />
+        />)}
       </div>
     </FavoriteProvider>
   );
 }
 
 export default App;
+

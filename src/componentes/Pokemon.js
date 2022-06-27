@@ -1,4 +1,4 @@
-import { type } from "@testing-library/user-event/dist/type";
+                    import { type } from "@testing-library/user-event/dist/type";
 import React, {useContext} from "react";
 import FavoriteContext from "../contexts/favoritesContext";
 
@@ -18,6 +18,15 @@ const Pokemon = (props) => {
           className="pokemon-image"
         />
       </div>
+      <div className="pokemon-image-container">
+        <img
+          alt={pokemon.name}
+          src={pokemon.sprites.front_shiny}
+          className="pokemon-image"
+        />
+      </div>
+
+
       <div className="card-body">
         <div className="card-top">
           <h3>{pokemon.name}</h3>
