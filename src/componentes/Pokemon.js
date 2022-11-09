@@ -18,14 +18,6 @@ const Pokemon = (props) => {
           className="pokemon-image"
         />
       </div>
-      <div className="pokemon-image-container">
-        <img
-          alt={pokemon.name}
-          src={pokemon.sprites.front_shiny}
-          className="pokemon-image"
-        />
-      </div>
-
 
       <div className="card-body">
         <div className="card-top">

@@ -86,11 +86,19 @@ nav {
   grid-template-columns: 33.3% auto 33.3%;
 }
 
+@media (max-width: 600px)
+{
+  .pokedex-grid {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto;
+  }
+}
+
 .pokemon-card {
   display: flex;
   box-shadow: 4px 4px 4px (0, 0, 0, 0.25);
-  border-radius: 20px;
-  background: rgb(238, 230, 238);
+  border-radius: 25px;
   background: linear-gradient(90deg, rgba(238, 230, 238, 1) 0%, rgba(180, 172, 197, 1) 50%, rgba(131, 123, 156, 1) 100%);
   color: #000000;
 }
