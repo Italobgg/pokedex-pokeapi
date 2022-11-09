@@ -5,8 +5,8 @@
 body {
   font-family: 'Raleway', sans-serif;
   font-family: 'Roboto', sans-serif;
-  color: #EAE2EB;
-  background: #131416;
+  color: #ffffff;
+  background: #155def;
   margin: 0 3%;
 }
 
@@ -33,7 +33,7 @@ nav {
 .searchbar {
   background-color: #fff;
   margin-right: 20px;
-  border-radius: 3px;
+  border-radius: 10px;
 }
 
 .searchbar input {
@@ -41,12 +41,12 @@ nav {
   box-shadow: 0px 2px 2px (0, 0, 0, 0.25);
   border-radius: 3px;
   border: none;
-  background-color: #b6b6b5c1;
+  background-color: #ffffffc1;
 
 }
 
 .searchbar-btn button {
-  background-color: #bd4141;
+  background-color: #ff0000;
   border-radius: 6px;
   display: inline-block;
   cursor: pointer;
@@ -57,10 +57,11 @@ nav {
   padding: 6px 24px;
   text-decoration: none;
   text-shadow: 0px 1px 0px #000000;
+  transition: 0.5s;
 }
 
 .searchbar-btn :hover {
-  background-color: #d45757;
+  background-color: #ce0000;
 }
 
 .searchbar-btn :active {
@@ -97,10 +98,11 @@ nav {
 
 .pokemon-card {
   display: flex;
-  box-shadow: 4px 4px 4px (0, 0, 0, 0.25);
-  border-radius: 25px;
-  background: linear-gradient(90deg, rgba(238, 230, 238, 1) 0%, rgba(180, 172, 197, 1) 50%, rgba(131, 123, 156, 1) 100%);
+  background: linear-gradient(90deg, rgba(238, 230, 238, 1) 0%, rgb(251, 42, 42) 50%, #ff0000 100%);
   color: #000000;
+  border-style:solid;
+  border-color:#000000;
+  border-radius: 10px;
 }
 
 .pokemon-image {
@@ -157,7 +159,7 @@ nav {
 }
 
 .pagination-container button {
-  background-color: #bd4141;
+  background-color: #ff0000;
   border-radius: 6px;
   display: inline-block;
   cursor: pointer;
@@ -168,10 +170,11 @@ nav {
   padding: 6px 24px;
   text-decoration: none;
   text-shadow: 0px 1px 0px #000000;
+  transition: 0.5s;
 }
 
 .pagination-container-left:hover {
-  background-color: #d45757;
+  background-color: #ce0000;
 }
 
 .pagination-container-left:active {
@@ -181,7 +184,8 @@ nav {
 
 
 .pagination-container-right:hover {
-  background-color: #d45757;
+  background-color: #ce0000;
+  transition: 1;
 }
 
 .pagination-container-right:active {
@@ -214,4 +218,13 @@ nav {
 .App {
   display: flex;
   align-items: right;
+}
+
+@media (max-width: 720)
+{
+  .pokedex-grid {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto;
+  }
 }

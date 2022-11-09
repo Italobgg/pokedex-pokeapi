@@ -8,7 +8,7 @@ const Navbar = () => {
   return [
     <nav>
       <div>
-        <img alt="PokeAPI" src={logoImg} className="navbar-img" />
+      <a href="https://italobgg.github.io/pokedex-pokeapi/"><img alt="PokeAPI" src={logoImg} className="navbar-img" /></a>
       </div>
     </nav>,
      <div className="favorites-numb"> Favoritos ❤️ {favoritePokemons.length} </div>,
