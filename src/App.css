@@ -6,7 +6,7 @@ body {
   font-family: 'Raleway', sans-serif;
   font-family: 'Roboto', sans-serif;
   color: #ffffff;
-  background: #155def;
+  background: linear-gradient(90deg, rgb(90, 134, 216) 0%, rgb(42, 98, 251) 50%, #0801d4 100%);
   margin: 0 3%;
 }
 
@@ -46,7 +46,7 @@ nav {
 }
 
 .searchbar-btn button {
-  background-color: #ff0000;
+  background-color: #ce0000;
   border-radius: 6px;
   display: inline-block;
   cursor: pointer;
@@ -61,7 +61,7 @@ nav {
 }
 
 .searchbar-btn :hover {
-  background-color: #ce0000;
+  background-color: #e40000;
 }
 
 .searchbar-btn :active {
@@ -87,18 +87,18 @@ nav {
   grid-template-columns: 33.3% auto 33.3%;
 }
 
-@media (max-width: 600px)
-{
+@media(max-width: 768px) {
   .pokedex-grid {
     display: grid;
-    gap: 10px;
-    grid-template-columns: auto;
+    gap: 1px;
+    grid-template-columns: 100%;
+
   }
 }
 
 .pokemon-card {
   display: flex;
-  background: linear-gradient(90deg, rgba(238, 230, 238, 1) 0%, rgb(251, 42, 42) 50%, #ff0000 100%);
+  background: linear-gradient(90deg, rgb(189, 143, 143) 0%, rgb(251, 42, 42) 50%, #ce0000 100%);
   color: #000000;
   border-style:solid;
   border-color:#000000;
@@ -159,22 +159,21 @@ nav {
 }
 
 .pagination-container button {
-  background-color: #ff0000;
+  background-color: #ce0000;
   border-radius: 6px;
   display: inline-block;
   cursor: pointer;
   color: #ffffff;
-  font-family: Arial;
   font-size: 20px;
   font-weight: bold;
   padding: 6px 24px;
   text-decoration: none;
-  text-shadow: 0px 1px 0px #000000;
+  text-shadow: 0px 2px 0px #000000;
   transition: 0.5s;
 }
 
 .pagination-container-left:hover {
-  background-color: #ce0000;
+  background-color: #e40000;
 }
 
 .pagination-container-left:active {
@@ -184,7 +183,7 @@ nav {
 
 
 .pagination-container-right:hover {
-  background-color: #ce0000;
+  background-color: #e40000;
   transition: 1;
 }
 
@@ -220,11 +219,3 @@ nav {
   align-items: right;
 }
 
-@media (max-width: 720)
-{
-  .pokedex-grid {
-    display: grid;
-    gap: 10px;
-    grid-template-columns: auto;
-  }
-}
